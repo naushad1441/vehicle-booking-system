@@ -25,7 +25,9 @@
             <h1>Create Booking</h1>
 
             @if ($errors->any())
-                <div class="alert alert-danger" role="alert">
+                <div class="alert alert-danger alert-dismissible">
+                    <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+                    <h5><i class="icon fas fa-ban"></i> Error!</h5>
                     <ul>
                         @foreach ($errors->all() as $error)
                             <li>{{ $error }}</li>
@@ -55,10 +57,10 @@
                     <input type="date" class="form-control" id="start_date" name="start_date" min="{{ Carbon::now()->format('Y-m-d') }}">
                 </div>
 
-                <div class="form-group">
+                {{-- <div class="form-group">
                     <label for="end_date">End Date</label>
                     <input type="date" class="form-control" id="end_date" name="end_date" min="{{ Carbon::now()->format('Y-m-d') }}">
-                </div>
+                </div> --}}
 
                 {{-- <div class="form-group">
                     <label for="duration">Duration</label>

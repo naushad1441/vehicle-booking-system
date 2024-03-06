@@ -82,17 +82,17 @@
                 </a>
               </li>
           @else
-          <li class="nav-item">
+          {{-- <li class="nav-item">
             <a href="{{route('admin.vehicles.index')}}" class="nav-link {{$current_route=='admin.vehicles.index'?'active':''}}">
               <i class="nav-icon fas fa-car"></i>
               <p>
                 vehicle
               </p>
             </a>
-          </li>
+          </li> --}}
           <li class="nav-item">
             <a href="{{route('admin.bookings.index')}}" class="nav-link {{$current_route=='admin.bookings.index'?'active':''}}">
-              <i class="nav-icon fas fa-booking"></i>
+              <i class="nav-icon fas fa-car"></i>
               <p>
                 Booking
               </p>

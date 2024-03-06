@@ -49,7 +49,6 @@
                             <tr>
                                 <th>Vehicle</th>
                                 <th>Start Date</th>
-                                <th>End Date</th>
                                 <th>Duration</th>
                                 <th>Total Cost</th>
                                 <th>Status</th>
@@ -62,12 +61,11 @@
                                 <tr>
                                     <td>{{ $booking->vehicle->name }}</td>
                                     <td>{{ $booking->start_date }}</td>
-                                    <td>{{ $booking->end_date }}</td>
                                     <td>{{ $booking->duration }}</td>
                                     <td>{{ $booking->total_cost }}</td>
                                     <td>
-                                        @if ($booking->end_date)
-                                            Upcoming
+                                        @if ($booking->start_date > $current_date)
+                                            Ongoing
                                         @else
                                             Completed
                                         @endif
@@ -76,11 +74,13 @@
                                         <a href="#" class="btn btn-sm btn-primary">Edit</a>
                                     </td>
                                     <td>
-                                        <form action="#" method="POST">
+                                        <a href="#" class="btn btn-sm btn-danger">Delete</a>
+
+                                        {{-- <form action="#" method="POST">
                                             @csrf
                                             @method('DELETE')
                                             <button type="submit" class="btn btn-sm btn-danger" onclick="return confirm('Are you sure you want to delete this vehicle?')">Delete</button>
-                                        </form>
+                                        </form> --}}
                                     </td>
                                 </tr>
                             @endforeach

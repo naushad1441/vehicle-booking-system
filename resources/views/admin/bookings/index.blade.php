@@ -22,24 +22,25 @@
     <!-- Main row -->
     <div class="row">
     	<div class="container-fluid">
-                @if(auth()->user()->is_admin)
                 <div class="row mb-2">
                     <div class="col-sm-6">
-                        <h1>My Bookings</h1>
+                        <h1>Bookings</h1>
                     </div><!-- /.col -->
                     <div class="col-sm-6">
                         <ol class="breadcrumb float-sm-right">
                             <a class="btn btn-block btn-primary" href="{{ route('admin.bookings.create')}}">
-                                New Booking
+                                Book now
                             </a>
                         </ol>
                     </div>
                 </div>
-                @endif
-
                 @if (session('success'))
-                    <div class="alert alert-success" role="alert">
-                        {{ session('success') }}
+                    <div class="alert alert-success alert-dismissible">
+                        <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+                        <h5><i class="icon fas fa-check"></i> Success!</h5>
+                        <ul>
+                            {{ session('success') }}
+                        </ul>
                     </div>
                 @endif
 
@@ -49,7 +50,7 @@
                             <tr>
                                 <th>Vehicle</th>
                                 <th>Start Date</th>
-                                <th>End Date</th>
+                                {{-- <th>End Date</th> --}}
                                 <th>Duration</th>
                                 <th>Total Cost</th>
                                 <th>Status</th>
@@ -60,12 +61,12 @@
                                 <tr>
                                     <td>{{ $booking->vehicle->name }}</td>
                                     <td>{{ $booking->start_date }}</td>
-                                    <td>{{ $booking->end_date }}</td>
+                                    {{-- <td>{{ $booking->end_date }}</td> --}}
                                     <td>{{ $booking->duration }}</td>
                                     <td>{{ $booking->total_cost }}</td>
                                     <td>
-                                        @if ($booking->end_date)
-                                            Upcoming
+                                        @if ($booking->start_date > $current_date)
+                                            Ongoing
                                         @else
                                             Completed
                                         @endif

@@ -1,9 +1,9 @@
 <?php return array(
     'root' => array(
         'name' => 'laravel/laravel',
-        'pretty_version' => 'dev-master',
-        'version' => 'dev-master',
-        'reference' => '12ce9b3dde884dd1374012c0b0bc6a2198b4e3a0',
+        'pretty_version' => 'dev-main',
+        'version' => 'dev-main',
+        'reference' => 'bfb5a3daa0aee7f16282b38fe0767d5db32fe43c',
         'type' => 'project',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
@@ -404,9 +404,9 @@
             'dev_requirement' => false,
         ),
         'laravel/laravel' => array(
-            'pretty_version' => 'dev-master',
-            'version' => 'dev-master',
-            'reference' => '12ce9b3dde884dd1374012c0b0bc6a2198b4e3a0',
+            'pretty_version' => 'dev-main',
+            'version' => 'dev-main',
+            'reference' => 'bfb5a3daa0aee7f16282b38fe0767d5db32fe43c',
             'type' => 'project',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),
@@ -572,9 +572,9 @@
             'dev_requirement' => false,
         ),
         'phar-io/manifest' => array(
-            'pretty_version' => '2.0.3',
-            'version' => '2.0.3.0',
-            'reference' => '97803eca37d319dfa7826cc2437fc020857acb53',
+            'pretty_version' => '2.0.4',
+            'version' => '2.0.4.0',
+            'reference' => '54750ef60c58e43759730615a392c31c80e23176',
             'type' => 'library',
             'install_path' => __DIR__ . '/../phar-io/manifest',
             'aliases' => array(),
@@ -754,8 +754,8 @@
         'psr/log-implementation' => array(
             'dev_requirement' => false,
             'provided' => array(
-                0 => '1.0|2.0',
-                1 => '1.0.0 || 2.0.0 || 3.0.0',
+                0 => '1.0.0 || 2.0.0 || 3.0.0',
+                1 => '1.0|2.0',
             ),
         ),
         'psr/simple-cache' => array(
@@ -1047,9 +1047,9 @@
             'dev_requirement' => false,
         ),
         'symfony/http-kernel' => array(
-            'pretty_version' => 'v5.4.36',
-            'version' => '5.4.36.0',
-            'reference' => '63a872e01fd70802b77023e2f5924170c99b2825',
+            'pretty_version' => 'v5.4.37',
+            'version' => '5.4.37.0',
+            'reference' => '4ef7ed872564852b3c6c15fecf492975a52cbff3',
             'type' => 'library',
             'install_path' => __DIR__ . '/../symfony/http-kernel',
             'aliases' => array(),
@@ -1155,9 +1155,9 @@
             'dev_requirement' => false,
         ),
         'symfony/routing' => array(
-            'pretty_version' => 'v5.4.35',
-            'version' => '5.4.35.0',
-            'reference' => '86c5a06a61ddaf17efa1403542e3d7146af96203',
+            'pretty_version' => 'v5.4.37',
+            'version' => '5.4.37.0',
+            'reference' => '48ae43e443693ddb4e574f7c12f0d17ce287694e',
             'type' => 'library',
             'install_path' => __DIR__ . '/../symfony/routing',
             'aliases' => array(),
@@ -1224,9 +1224,9 @@
             'dev_requirement' => true,
         ),
         'theseer/tokenizer' => array(
-            'pretty_version' => '1.2.2',
-            'version' => '1.2.2.0',
-            'reference' => 'b2ad5003ca10d4ee50a12da31de12a5774ba6b96',
+            'pretty_version' => '1.2.3',
+            'version' => '1.2.3.0',
+            'reference' => '737eda637ed5e28c3413cb1ebe8bb52cbf1ca7a2',
             'type' => 'library',
             'install_path' => __DIR__ . '/../theseer/tokenizer',
             'aliases' => array(),
